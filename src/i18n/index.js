@@ -11,7 +11,7 @@ import hiMessages from './messages/hi.json';
 import frCAMessages from './messages/fr_CA.json';
 // no need to import en messages-- they are in the defaultMessage field
 
-const messages = {
+var messages = {
   ar: arMessages,
   'es-419': es419Messages,
   fr: frMessages,
@@ -22,7 +22,7 @@ const messages = {
   hi: hiMessages,
   'fr-ca': frCAMessages,
   ru: ruMessages,
-  uk: ukMessages,
+  uk: ukMessages
 };
-
 export default messages;
+//# sourceMappingURL=index.js.map
