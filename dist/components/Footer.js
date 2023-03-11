@@ -19,6 +19,8 @@ import { ensureConfig } from '@edx/frontend-platform/config';
 import { AppContext } from '@edx/frontend-platform/react';
 import messages from './Footer.messages';
 import LanguageSelector from './LanguageSelector';
+var current = new Date();
+var date = "".concat(current.getFullYear());
 ensureConfig(['LMS_BASE_URL', 'LOGO_TRADEMARK_URL'], 'Footer component');
 var EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link'
@@ -71,7 +73,9 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
         alt: intl.formatMessage(messages['footer.logo.altText'])
       })), /*#__PURE__*/React.createElement("div", {
         className: "flex-grow-1"
-      }), showLanguageSelector && /*#__PURE__*/React.createElement(LanguageSelector, {
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "center-footer"
+      }, /*#__PURE__*/React.createElement("p", null, " Tous le droits sont res\xE9rv\xE9s  | @ Djezzy $", date, " "))), showLanguageSelector && /*#__PURE__*/React.createElement(LanguageSelector, {
         options: supportedLanguages,
         onSubmit: onLanguageSelected
       })));
