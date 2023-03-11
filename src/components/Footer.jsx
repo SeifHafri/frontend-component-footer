@@ -57,14 +57,14 @@ class SiteFooter extends React.Component {
             aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
           >
             <img
-              style={{ maxHeight: 45 }}
+              style={{ maxHeight: 50 }}
               src={logo || config.LOGO_TRADEMARK_URL}
               alt={intl.formatMessage(messages['footer.logo.altText'])}
             />
           </a>
           <div className="flex-grow-1">
             <div className="center-footer">
-              <p> Tous le droits sont resérvés  | @ Djezzy ${date} </p>
+              <p> Tous le droits sont resérvés  | @ Djezzy {date} </p>
             </div>
 
           </div>

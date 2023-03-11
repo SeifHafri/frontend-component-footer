@@ -11,3 +11,7 @@ $gray-footer: #9D9D9D !default;
   color: white;
   margin-right: 60px;
 }
+
+.center-footer p {
+  margin-top: revert;
+}
