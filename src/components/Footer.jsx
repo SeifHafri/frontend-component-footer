@@ -8,6 +8,8 @@ import { AppContext } from '@edx/frontend-platform/react';
 import messages from './Footer.messages';
 import LanguageSelector from './LanguageSelector';
 
+const current = new Date();
+const date = `${current.getFullYear()}`;
 ensureConfig([
   'LMS_BASE_URL',
   'LOGO_TRADEMARK_URL',
@@ -60,7 +62,12 @@ class SiteFooter extends React.Component {
               alt={intl.formatMessage(messages['footer.logo.altText'])}
             />
           </a>
-          <div className="flex-grow-1" />
+          <div className="flex-grow-1">
+            <div className="center-footer">
+              <p> Tous le droits sont resérvés  | @ Djezzy ${date} </p>
+            </div>
+
+          </div>
           {showLanguageSelector && (
             <LanguageSelector
               options={supportedLanguages}
