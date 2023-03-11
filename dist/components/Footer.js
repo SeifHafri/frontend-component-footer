@@ -67,7 +67,7 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
         "aria-label": intl.formatMessage(messages['footer.logo.ariaLabel'])
       }, /*#__PURE__*/React.createElement("img", {
         style: {
-          maxHeight: 45
+          maxHeight: 50
         },
         src: logo || config.LOGO_TRADEMARK_URL,
         alt: intl.formatMessage(messages['footer.logo.altText'])
@@ -75,7 +75,7 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
         className: "flex-grow-1"
       }, /*#__PURE__*/React.createElement("div", {
         className: "center-footer"
-      }, /*#__PURE__*/React.createElement("p", null, " Tous le droits sont res\xE9rv\xE9s  | @ Djezzy $", date, " "))), showLanguageSelector && /*#__PURE__*/React.createElement(LanguageSelector, {
+      }, /*#__PURE__*/React.createElement("p", null, " Tous le droits sont res\xE9rv\xE9s  | @ Djezzy ", date, " "))), showLanguageSelector && /*#__PURE__*/React.createElement(LanguageSelector, {
         options: supportedLanguages,
         onSubmit: onLanguageSelected
       })));
